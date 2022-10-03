@@ -1,0 +1,150 @@
+
+
+Agenda :
+
+- Introduction to .Net(Framework and core)
+- Components 
+- Advantages
+- Applications 
+- namespace
+- access modifiers
+- read and write stmts
+- simple hello world Applications
+- create a application for accepting user input and display the value
+
+Programming languages :
+- High level
+- Low level 
+
+
+Translators :
+
+convert instructions(source code) ---> machine code
+
+Types :
+
+- Compiler :
+* scan your whole programs and then generate mc in one go
+* object code
+
+- Interpreter
+* scan each and every line 
+* no object code 
+
+- Assembler
+
+convert assembly language instructions into binary format
+
+Framework : platform to create your application
+
+Programming language : C#,F#,VB
+
+Application : 
+
+JIT : Just in time compiler(IL - MC)
+
+Source code ------> (c#,f#,vb# compiler)-----> IL
+
+BCL: Base class library 
+
+- Building blocks of .Net programs
+
+CLR : Common language runtime (memory mgmt,exception handling,garbage collection)
+
+Code :
+
+- Managed code : supported by .net platform and has CLR services included.
+
+- Unmanaged code : Not directly supported by your CLR.Directly by OS.
+
+Heap storage ( holds the object )
+
+Stack : LIFO (Last in first out)
+Queue : FIFO (First in first out)
+
+
+Read/ Write :
+
+ReadLine() - accept user input
+WriteLine() - write the content on the screen
+
+Data binding :
+
++ : to concat the string and value 
+{} : Format string
+
+comment line : ignorned by your compiler
+ 
+ // - single line comment
+ /*...*/ - multiline comment
+
+ Variable : memory location that stores a value
+
+ <access modifier> <datatype> variable name = {values}
+
+eg :
+
+//Assigning a value to variable 
+
+int ticketPrice = 100;
+
+//declaration of variable 
+int ticketPrice;
+
+Variable Name Rules :
+
+- Start with a alphabet (not numbers)
+- do not start with special charaters
+- _  : can be used
+- should not be a reserved keyword like if,do,else,and...
+- 0-9 digits can be used but not at the start 
+
+eg :
+
+123name - invalid
+$name - Invalid
+_name - valid
+Name234* - Invalid
+name 234$ - invalid
+
+
+ Datatype :
+ int,float,....
+
+ access modifier : public ,private,protected,internal,protected internal
+
+
+ value type : stores the value
+
+Value before :5 (val=5)
+Value is :25
+value after :5
+ 
+ reference type : refer to the memory address of the variable 
+
+ Value before :5 (address of val)
+Value is :25
+value after :25
+
+Access Modifiers :
+
+public : outside the scope / another class
+Private : local scope and accessed inside the fn,class where thay are declared
+internal : access it inside the same assembly
+protected : inheritance(accessed only the inheriting child classes)
+protected internal : internal + protected
+
+Assembly :
+
+.exe : executable file 
+.dll : dynamic link library
+
+Advantages :
+
+- Interoperability 
+- docker enable supported
+- Portability
+- Security 
+- memory management
+
+Namespace : container to hold multiple classess
