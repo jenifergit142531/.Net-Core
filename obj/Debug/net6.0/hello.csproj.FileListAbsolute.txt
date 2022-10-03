@@ -1,0 +1,15 @@
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/hello
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/hello.deps.json
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/hello.runtimeconfig.json
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/hello.dll
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/ref/hello.dll
+/Users/jenifery1409icloud.com/csharp/hello/bin/Debug/net6.0/hello.pdb
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.csproj.AssemblyReference.cache
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.AssemblyInfoInputs.cache
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.AssemblyInfo.cs
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.csproj.CoreCompileInputs.cache
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.dll
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/ref/hello.dll
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.pdb
+/Users/jenifery1409icloud.com/csharp/hello/obj/Debug/net6.0/hello.genruntimeconfig.cache
