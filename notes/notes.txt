@@ -1,0 +1,133 @@
+
+Agenda :
+
+- Main method 
+- Data types
+- Operators 
+- Conditional construct
+- Looping statements
+- break and continue
+- Basic type conversion
+- Exceptions
+- static methods
+- DateTime 
+
+Main method :
+- One main method / console application
+- Entry point of execution
+- Main is declared the class or struct.
+- Accepts command line arguments as string of arrays(string[] args)
+
+public static void Main(string[] args)
+
+- Main can have return types like void,int,Task
+
+public async Task Main(string[] args)
+
+- overloading main method is not allowed
+
+Datatypes :
+
+- Basic :
+1.integer
+2.double
+3.char
+4.string
+
+Operators :
+
+- Arithmetic : +,-,*,/,%,++,--
+- Assignment : +=,-=,*=,%=,/=,=
+- Logical : && , || ,!
+- Relational operator :==,!=,<,>,<=,>=
+
+Operator precedence :
+1.Postfix : (),[],->(left to right)
+2.Unary : ++,--,(type),sizeof (right to left)
+3.Multiplicative : *,/,% (left to right)
+4.Additive : + ,- (left to right)
+
+Conditional construct :
+
+- if..else
+- multiple if - else
+- switch
+
+if (cnd)
+{
+    //code here
+}
+else
+{
+    //code here
+}
+
+* depends on evaluating the expression (boolean expression)
+* boolean expression returns true or false
+* true : execute if block code
+* false : either execute else block or evaluate another else if cond
+
+Switch :
+
+- evaluate Multiple conditions
+- attempts to match variable with the value in case stmts 
+
+switch (variable)
+{
+    case 1:
+    //code 1
+    break;
+    case 2:
+    //code 2
+    ....
+    default:
+    //code default
+}
+
+Practice : WIN - WIN : SCENARIO 
+
+Looping statements :
+- Execute the set of statement again and again 
+
+* for
+* while
+* do-while
+
+for loop:
+ for(initialization;condition;increment\decrement)
+ {
+    //code here 
+ }
+
+while : check cond and then execute statements
+++ 
+
+do..while : it will execute the statement atleast once before checking the cond
+
+
+break : used to jump out of the loop
+continue :continues with the next iteration
+
+Exceptions : only at run time;
+class : System.Exceptions
+error (syntactical or semantical)vs exception 
+
+try :set of statements that needs to be checked for error
+catch :handle the exception
+finally : exception occurs or not (close the resource)
+throw : throw out of the method
+
+
+DateTime  : defines date and time (methods & properties)
+
+Type casting :
+
+converting from one type to another 
+
+two types :
+
+1.Implicit conversion :no syntax, type safe,no data loss
+2.explicit : (cast) syntax,loss of data,leads of failure 
+
+boxing : type ---> object
+unboxing : object ---> type
