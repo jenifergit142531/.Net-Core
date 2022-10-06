@@ -1,0 +1,141 @@
+
+
+Agenda : 
+-Object oriented concepts 
+* Object
+* class
+* abstraction
+* encapsulation
+* inheritance
+* polymorphism
+- Constructor 
+- Destructor
+- static vs non static 
+- abstract class
+* Method overriding
+- virtual function
+- Interface
+
+
+
+Object oriented programming :
+
+object : real time entity
+- instance of the class
+
+eg : apple is a object 
+
+entity(state,behaviour,identity )=> object
+
+state : properties (color,quality,taste,...)
+behaviour : cooking,baking,eating
+identity : gala,kashmir,.....
+
+Class : blueprint of the object 
+eg : fruits
+
+Encapsulation : binding data + function in single unit 
+
+Access modifiers => public,private,protected 
+
+Abstraction : hiding background details and giving only necessary info
+
+eg : car ,pizza 
+
+- abstract,interface,virtual functions
+
+Inheritance :one class is derived by another class
+
+parent class : base class
+child class : derived class
+
+Polymorphism : taking many forms
+
+method overloading
+method overloading 
+
+Constructor :
+
+- initialize the members of the class
+- gets invoked automatically whenever you create a instance 
+- Constructor name and class name must be same
+- constructor has no return types
+- accept Parameterized
+- can be overloaded
+
+Two types :
+
+- Empty Constructor
+- Parameterized Constructor
+
+Constructor overloading :
+
+- more than one constructor in your class
+
+Copy constructor : not recommendable 
+
+copy the content from another constructor / already existing construtor 
+
+
+Destructor :
+
+destroy the instance of the class
+
+- destructor name is same as class name
+~ indicates destructor
+
+- implicit call to the CLR garbage collector 
+
+- Only one destructor
+
+- Destructor does not have return types
+- cannot accept parameter
+- cannot be overloaded 
+- is invoke
+- invoked while exiting the programming
+
+destructor ----> finalize () [release the resource,db connection,file open/close]
+
+static :(class scope)
+
+- one copy of the method or variable
+- doesnt require object invocation 
+- accessed using class name 
+
+Inheritance :
+Types :
+
+- Single inheritance : 1BC ---> 1 DC
+- Multilvel inheritance : 1 BC ---> 1 DC(BC)----> 2DC
+- Hierarchial 1BC ---> 1DC,2DC,2DC....
+
+other :
+Hybrid (combination of above inheritance)
+Multiple inheritance : 1bc,2bc....----> 1DC(not recommendable)
+
+Abstract class :
+
+- "abstract" keyword
+
+abstract class vehicle
+
+- Can have both abstract method and concrete method
+
+1.abstract method : no body implementation (empty method)
+2.concrete method : has implementation
+
+- you cannot create object for the abstract class
+
+Virtual : imaginary function (that can be overriden by the child class)
+ - Whe you want the own implementation
+ - Create object for the class that holds the virtual function
+
+Interface :
+- only contain abstract methods 
+- no implementation 
+- only definition / declaration
+- "what to do" but not "how to do"
+- whenever you inherit the interface,you MUST implement all its methods
+- you cannot create an object to instantiate the interface
+- You dont have to use the "override" keyword ,just implement it 
+
