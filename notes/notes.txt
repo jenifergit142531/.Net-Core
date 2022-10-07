@@ -1,0 +1,124 @@
+
+Agenda :
+
+- Polymorphism
+* Method overloading 
+* Method overriding (abstract class and virtual functions)
+- Arrays
+* single dimensional
+* multidimensional 
+* Jagged Arrays
+- Sealed 
+- Struct
+- Enum
+
+Things to do in next class :
+
+- property
+- indexers
+- Property initializer
+- nullable
+- record type
+
+
+Polymorphism : many forms 
+Two Types :
+1.static Polymorphism : compile time / early binding(method & operator overloading)
+2.Dynamic polymorphism : run time / late binding (abstract & virtual)
+
+Method overloading : compile time 
+
+- same method (more than once)with different signature 
+
+1.different return Types
+void display()
+int display()
+2.Different datatypes 
+void display(int)
+void display(string)
+3.Different number of arguments
+void display(int a)
+void display(int a,int b)
+
+Operator Overloading :
+- Special symbols that are used for overloading
+1.unary 
+2.binary
+2.comparison
+
+Arrays :
+- Reference Types(memory address of the variable)
+- Indexex are used to access the array elements
+- always starts with 0
+- stores multiple items with same DATA TYPE in a single variable 
+
+Types:
+single
+multideimensional
+jagged 
+
+Advantages : 
+- easy to access
+- contiguous memory location
+
+Disadvantages :
+
+- fixed size 
+- Resource wastage 
+- insertion / deletion is difficult
+
+Multidimensional array :
+
+- rows and columns(fixed size)
+
+Jagged array :
+
+- Variable length for the tuples
+
+Struct :
+
+- light weight version of class
+- value Types
+- Dont need "new" operator for memory allocation
+- cannot have default constructor(without parameters)
+- destructor
+
+struct <strnaame>
+{
+    //code(data and member fns)
+}
+
+differenc struct vs 
+- value
+- stack
+- each variable contains its own data
+
+class
+- reference type
+- heap
+- multiple variables can reference the same object
+
+sealed :
+
+- stand alone class
+- cannot be inherited or shared or extended by other classess
+
+Enum: special class that represents a group of constants 
+
+enum colorcodes
+{
+    red,
+    blue,
+    green
+}
+
+
+
+
+
+
+
+
+ 
+ 
+
