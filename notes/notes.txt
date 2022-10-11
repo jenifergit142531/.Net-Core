@@ -1,0 +1,52 @@
+
+Agenda :
+- Property
+* Property initializer
+- indexers
+- nullable
+- record type
+- Collections
+* Index based
+* Key - value
+* Prioritised
+* Specialized
+
+
+Property :
+
+- class members to expose the value 
+- special methods - accessor 
+- get & set
+- get : return the value
+- set : assign the value
+
+Indexer :
+
+- virtual array
+- smart array
+- this keyword
+- [] : access 
+- set / get property in indexing
+
+
+Record :
+
+- c#10 
+- behaves like a value type 
+- get & init
+- immutable properties (properties cannot be changed)
+- 'with' keyword to update the property value
+
+Nullable :
+
+- assign null values
+- Assign valuies to the nullable type at the later point of time in the code.
+- Properties : HasValue ,value
+- Methods : getValueOrDefault , ?? 
+
+
+
+
+
+
+
