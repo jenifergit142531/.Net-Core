@@ -1,0 +1,147 @@
+
+
+Agenda : 
+
+Collections
+* Index based
+- Array List ,list
+* Key Value
+- Hash table and sorted list
+* Prioritised
+- stack - LIFO
+- Queue - FIFO
+* Specialised 
+- String
+- Dictionary
+
+
+Collections :
+- Deal with large volume of data
+- Built in data structures
+- IEnumerable - Root interface 
+
+Types :
+- Generic :
+* strongly typed
+* Type safety
+* System.Collections.Generics
+* List<T>,Dictionary<Tkey,Tvalue>,SortedList<Tkey,Tvalue>,Hashset<T>
+
+- Non-generic 
+* System.Collections
+* Arraylist,hashtable,queue,stack
+* not strongly typed
+* Not type safe
+
+Index based collections:
+
+- elements are traversed / accessed through the index Value
+- Arraylist : class
+- Dynamic in nature 
+- Size is enhanced
+- An object is created for Arraylist
+- Properties : capacity,count
+- methods : add,remove,sort,reverse
+
+int[] a=new int[5] // array static 
+
+List: 
+
+- Generic collections
+- Strongly Types
+
+methods : insert,remove,index
+properties : count,capacity,contains
+
+Hashset :
+
+- Generic collections
+- Unordered collection of unique elements 
+- prevent duplication of elements 
+
+Hashset<T>
+
+methods : add,clear,contains,copyto,remove,removewhere
+
+1.union,intersect,except
+
+
+Hash table : both key and Value
+key : attribute
+value : actual data
+
+Sr.No.	Property & Description
+	
+Count :Gets the number of key-and-value pairs contained in the Hashtable.	
+IsFixedSize : Gets a value indicating whether the Hashtable has a fixed size.
+IsReadOnly :Gets a value indicating whether the Hashtable is read-only.	
+Keys :Gets an ICollection containing the keys in the Hashtable.
+Values :Gets an ICollection containing the values in the Hashtable.
+
+Method & Description
+	
+public virtual void Add(object key, object value);
+
+Adds an element with the specified key and value into the Hashtable.
+
+	
+public virtual void Clear();
+
+Removes all elements from the Hashtable.
+
+
+public virtual bool ContainsKey(object key);
+
+Determines whether the Hashtable contains a specific key.
+
+
+public virtual bool ContainsValue(object value);
+
+Determines whether the Hashtable contains a specific value.
+
+	
+public virtual void Remove(object key);
+
+Removes the element with the specified key from the Hashtable.
+
+
+Sorted List : keep the data in sorted way
+
+- key value pairs
+- generic collection
+- sorts the data in ascending order based on key
+
+Prioritised : non generic collection 
+
+1.stack
+- last in first out
+* back button in browser
+* stack of books in a bag
+* stack of plates for events
+
+push : add 
+pop : remove
+
+
+2.queue
+
+- First in first out
+* luggagge checking airport
+* escalator
+* waiting line in hospital
+* printer 
+
+enqueue : add
+dequeue: remove
+
+Dictionary :  generic collection
+
+dictionary<Tkey,Tvalve>
+
+- key cannot be null and must be unique
+- values can be both null or duplicate
+
+
+Practice assignment : 
+containsKey()
+TryGetValue()
