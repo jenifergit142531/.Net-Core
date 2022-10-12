@@ -1,0 +1,15 @@
+/Users/jenifery1409icloud.com/class7/class7demos/bin/Debug/net6.0/class7demos
+/Users/jenifery1409icloud.com/class7/class7demos/bin/Debug/net6.0/class7demos.deps.json
+/Users/jenifery1409icloud.com/class7/class7demos/bin/Debug/net6.0/class7demos.runtimeconfig.json
+/Users/jenifery1409icloud.com/class7/class7demos/bin/Debug/net6.0/class7demos.dll
+/Users/jenifery1409icloud.com/class7/class7demos/bin/Debug/net6.0/class7demos.pdb
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.csproj.AssemblyReference.cache
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.AssemblyInfoInputs.cache
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.AssemblyInfo.cs
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.csproj.CoreCompileInputs.cache
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.dll
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/refint/class7demos.dll
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.pdb
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/class7demos.genruntimeconfig.cache
+/Users/jenifery1409icloud.com/class7/class7demos/obj/Debug/net6.0/ref/class7demos.dll

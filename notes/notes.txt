@@ -1,0 +1,120 @@
+
+
+Agenda :
+
+- Delegates
+* single cast
+* Multicast
+- Anonymous delegate
+- Generic Delegate
+- Built in Delegates
+* Func
+* Action
+* Predicate
+- Lambda expression
+- Events
+- Event handling
+
+
+Delegates :
+ - Reference type
+ - Hold the reference of the method 
+ - Type safe pointer 
+ - many delegate on your class
+ - Delegates work well with lambda expression and anonymous method
+
+
+ need ?
+ - call back to the method at runtime
+ - invoke the events 
+
+ Three step process :
+
+ step 1: Declare the delegate
+
+ <accessmodifier> delegate <returntype> delegatename (parameter)
+
+ step 2: Set the target method 
+
+ delegatename dn=new delegatename(methodname)
+
+ step 3: Invocation (call the delegate \ execute)
+
+ dn()
+
+ Types :
+
+ - single cast delegate :
+
+  delegate points to one method at a time
+
+  d1---->m1
+
+
+- Multi cast delegate :
+
+one delegate point to multiple methods at run time
+
+d1 ----> m1,m2,m3....
+
+operator : +=
+
+- Generic delegate : 
+
+delegate must work with different method signatures
+
+T - data type
+
+- Anonymous Delegate :
+
+delegate does not point to the method but it hold some values or data
+
+Built in delegates :
+
+- System defined delegates
+
+
+* Func :
+
+- MUST return a value
+- 0 - 16 input parameters
+- does not allow ref / out parameter
+- anonymous function & lambda expression (=>)
+
+ Lambda expression :
+
+ input => expression or {statements};
+
+ * Action :
+
+ - Does not return a value
+ - Return type is void
+ - accepts 0 - 16 input parameters
+ - used with anonymous method and lambda expression
+
+ * Predicate :
+
+ - return boolean value
+ - Accept 1 input 
+ - used with anonymous method and lambda expression
+
+Lambda Expression :
+
+Left side : input
+right side : statement / expression
+lambda operator : =>
+
+Event & Event handler :
+
+- user actions such as click,mouse execute
+- events are dependent on delegate
+- to perform an action in your code
+
+
+event ---> delegate (method)
+
+
+
+
+
+ 
