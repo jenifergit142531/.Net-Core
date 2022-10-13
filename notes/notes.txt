@@ -1,0 +1,71 @@
+
+
+Agenda :
+
+- LINQ(language integrated query)
+- NuGet package manager
+
+LINQ :
+
+- Language integrated query
+- query syntax in c#
+
+object <---> linq query (from,where,select)----> data source(sql,xml,ado.net,objects)
+
+
+Why ??
+
+- Interact with datasources (object,relational,xml)
+- Supports query operators that can be used directly in the application
+
+Namespace :
+
+using System.Linq;
+
+- if not available ,download from tools --> nuget pm ----> System.Linq
+
+- IQueryable : Root interface(select,where,union,intersect ...)
+- IEnumerable : Root interface ( avg,sum,count,min,max,)
+
+Syntax :
+
+from <variable> in <coll/var/list>
+where <condition / lamdba expression>
+select <resultset>
+
+Join : combines two list or objects based on criteria
+
+group join : based on common criteria from both the objects
+
+Aggregate : max,min,sum,count,avg...
+
+Element Operator : return the element from the sequence 
+
+Partition : split the sequence  into two parts based on the specified 
+* skip
+* skip while
+* take
+* take while
+
+Set operation : work with two collection and return a new collection
+
+* union
+* intersect
+* except
+
+Assignment :
+
+Range,distinct,Repeat,concat,All,any,Groupby,Thenby,tolookup
+
+LInq to XML :
+
+- linq to communicate with the xml file
+- query / save /retrieve
+- XML : Extensible mark up language
+<company>
+<employee>
+<eid>101</eid>
+<ename>jeni</ename>
+</employee>
+</company>
+
