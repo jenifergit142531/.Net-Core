@@ -1,0 +1,15 @@
+/Users/jenifery1409icloud.com/class9/class9demos/bin/Debug/net6.0/class9demos
+/Users/jenifery1409icloud.com/class9/class9demos/bin/Debug/net6.0/class9demos.deps.json
+/Users/jenifery1409icloud.com/class9/class9demos/bin/Debug/net6.0/class9demos.runtimeconfig.json
+/Users/jenifery1409icloud.com/class9/class9demos/bin/Debug/net6.0/class9demos.dll
+/Users/jenifery1409icloud.com/class9/class9demos/bin/Debug/net6.0/class9demos.pdb
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.csproj.AssemblyReference.cache
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.AssemblyInfoInputs.cache
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.AssemblyInfo.cs
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.csproj.CoreCompileInputs.cache
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.dll
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/refint/class9demos.dll
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.pdb
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/class9demos.genruntimeconfig.cache
+/Users/jenifery1409icloud.com/class9/class9demos/obj/Debug/net6.0/ref/class9demos.dll

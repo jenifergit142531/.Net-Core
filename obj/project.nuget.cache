@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLBtzTOrdDl4wBH7D0diyaVgPgTpDkB/BWqWLDOq5SEx+3HCZHHzaq32cCxOq/FD86/DU8q3ddyl184TH19g1g==",
+  "success": true,
+  "projectFilePath": "/Users/jenifery1409icloud.com/class9/class9demos/class9demos.csproj",
+  "expectedPackageFiles": [
+    "/Users/jenifery1409icloud.com/.nuget/packages/system.json/4.7.1/system.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
