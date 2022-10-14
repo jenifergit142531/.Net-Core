@@ -1,0 +1,2 @@
+Text writer is an abstract class for stream writer
+It is used to write multiple lines of text in the file

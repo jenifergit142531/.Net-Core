@@ -1,0 +1,124 @@
+
+Agenda :
+
+- Relection
+- Attributes
+- File handling
+- Serialization
+
+Reflection : metadata
+
+metadata -> data about the data
+
+int16
+public int show()
+string a;
+
+
+Attributes :
+
+- convey information about your code 
+
+Obsolete() : predefined attribute ,used to mark the method as inactive
+
+
+
+Files:
+- collection of data stored in a specific location
+- large volume of information
+- Read : read data from file
+- Write : write the data to the file
+
+Types :
+- byte read/byte write
+- text read / text write
+- binary Files
+
+Stream :
+ - flow of data in bytes
+ - Input stream : read data
+ - Output stream : write data 
+
+ Serialization :
+
+ - converting objects ---> bytes(file/memory/db)
+
+ Deserialization : Reverse process
+
+ (file/memory/db)bytes ---> object 
+
+ Three ways :
+
+ - Binary Serialization(ghfs758769  ./  [   p[]])
+ - XML Serialization(<><>tags)
+ - JSON serialization({"","",""})
+
+ using Newtonsoft.Json;
+
+[Serializable]
+public class HollywoodMovie
+{
+    public string moviename;
+    public int ticketprice;
+
+
+    public void movielist()
+    {
+        List<HollywoodMovie> ls = new List<HollywoodMovie>();
+        ls.Add(new HollywoodMovie()
+        {
+            moviename = "Tenet",
+            ticketprice = 250
+        });
+        ls.Add(new HollywoodMovie()
+        {
+            moviename = "Jurassic park",
+            ticketprice = 350
+        });
+        ls.Add(new HollywoodMovie()
+        {
+            moviename = "Gone girl",
+            ticketprice = 150
+        });
+
+        //JSON Serialization
+        string memory;
+        memory = JsonConvert.SerializeObject(ls);
+        Console.WriteLine(memory);
+
+        //JSON Deserialization
+
+        List<HollywoodMovie> des = JsonConvert.DeserializeObject<List<HollywoodMovie>>(memory);
+        foreach(var i in des)
+        {
+            Console.WriteLine("Movie Name :" + i.moviename);
+            Console.WriteLine("Ticket price :" + i.ticketprice);
+        }
+    }
+
+
+
+
+
+}
+
+public class Program
+{
+public static void Main(string[] args)
+    {
+
+        HollywoodMovie hm = new HollywoodMovie();
+        hm.movielist();
+    }
+        }
+
+
+
+
+
+
+
+
+
+
+
