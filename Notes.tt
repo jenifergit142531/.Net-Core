@@ -1,0 +1,27 @@
+﻿
+
+foreground : main quits,child executes
+background : main quits,child quits
+
+isBackground=true;
+
+
+Agenda :
+
+- Task
+- Entity Framework core
+- Dependency injection
+
+Purpose :
+- create a parallel processing
+
+Task <taskobj> = new Task()
+
+Task <taskobj> = Task.Run(()=>
+{
+//task code goes here
+}
+
+Task <taskobj> = Task.Factory.StartNew();
+
+
