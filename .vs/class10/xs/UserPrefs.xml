@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{FB0B7EC7-AE11-4E82-B4AA-1C0B4F6B65D3}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AssemblyFiles PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Threading PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="class10">
+    <Files>
+      <File FileName="class10" Line="13" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="class10" expanded="True">
+            <Node name="notes" expanded="True">
+              <Node name="/Users/jenifery1409icloud.com/Projects/BookStoreApp/notes.tt" selected="True" />
+            </Node>
+            <Node name="AssemblyFiles" expanded="True" />
+            <Node name="BookStoreApp" expanded="True" />
+            <Node name="Calculator" expanded="True" />
+            <Node name="Threading" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.ItemProperties.BookStoreApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>
