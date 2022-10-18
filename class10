@@ -1,0 +1,80 @@
+﻿class Program
+{
+
+    public static void childThread()
+    {
+        Console.WriteLine("Child thread started");
+        for(int i =0;i<=5;i++)
+        {
+            Console.WriteLine("Checking the database update");
+            Thread.Sleep(2000);
+        }
+    }
+    public void job1()
+    {
+        lock(this)
+        {
+            for (int i = 0; i <= 10; i++)
+            {
+               Thread.Sleep(200);
+                Console.WriteLine("Job1 is handled by thread1 : " + i);
+                
+            }
+        }
+        
+        
+    }
+    /*
+    static void job2()
+    {
+        for (int i = 0; i <= 10; i++)
+        {
+            Thread.Sleep(200);
+
+
+            Console.WriteLine("Job2 is handled by thread2 : " + i);
+        }
+        
+            
+    }*/
+  public static void Main(string[] args)
+    {
+
+        /*Thread child1 = new Thread(childThread)
+        {
+            IsBackground=true
+        };
+        Console.WriteLine($"child thread is a background thread : {child1.IsBackground}");
+        child1.Start();
+        
+        Console.WriteLine("Main thread quits");
+        */
+
+
+
+        Program p = new Program();
+        Thread thread1 = new Thread(p.job1);
+        //Thread newthread1 = new Thread(p.job1);
+        //Thread thread2 = new Thread(job2);
+
+        thread1.Start();
+        try
+        {
+            thread1.Abort();
+            //thread1.Start();
+        }
+        catch(ThreadAbortException ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+
+        Console.WriteLine("End of main");
+        //newthread1.Start();
+        //thread1.Join();
+        //thread2.Start();
+        //Thread th = Thread.CurrentThread;
+        //th.Name = "Main Thread";
+        //Console.WriteLine(th.Name);
+    }
+}
+
