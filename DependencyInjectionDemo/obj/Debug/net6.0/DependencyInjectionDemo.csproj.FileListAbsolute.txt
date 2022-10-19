@@ -1,0 +1,15 @@
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\DependencyInjectionDemo.exe
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\DependencyInjectionDemo.deps.json
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\DependencyInjectionDemo.runtimeconfig.json
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\DependencyInjectionDemo.dll
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\ref\DependencyInjectionDemo.dll
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\bin\Debug\net6.0\DependencyInjectionDemo.pdb
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.csproj.AssemblyReference.cache
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.AssemblyInfoInputs.cache
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.AssemblyInfo.cs
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.csproj.CoreCompileInputs.cache
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.dll
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\ref\DependencyInjectionDemo.dll
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.pdb
+C:\Users\JeniferY\source\repos\EFCoreApproachDemo\DependencyInjectionDemo\obj\Debug\net6.0\DependencyInjectionDemo.genruntimeconfig.cache

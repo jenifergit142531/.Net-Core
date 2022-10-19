@@ -1,0 +1,67 @@
+
+
+Agenda :
+
+- Entity Framework Core
+- Dependency Injection
+
+EF : ORM(Object relational mapper)
+
+- Light weight ,open source and cross platform versions that is used for data access.
+
+- Scaffold : System generated code 
+
+Approches :
+
+- Code first approach (class (app)---> table(db))
+- Database first approach (table(db)---> app)
+
+Packages :
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore
+
+dotnet restore
+
+create class:
+- filmdetails
+- filmshootings
+
+
+DBCONTEXT & DBSET :
+
+DBContext : represents the database connection 
+DBSet : Represents the table in the database
+
+
+PM Commands:
+add-migration <CreateDatabase>
+update-database
+
+CLI Commands:
+dotnet ef migrations add <createdatabse>
+dotnet ef database update
+
+CRUD Operations:
+CREATE / INSERT
+READ
+UPDATE
+DELETE
+
+Dependency injection :
+
+- software design pattern
+- dependency : one object depends on another object 
+- Loosely coupled product / code
+- code maintainablity / changeable/reduces the complexity
+
+Types :
+- Constructor injection
+- Property injection
+- Method injection
+
+
+
+
+

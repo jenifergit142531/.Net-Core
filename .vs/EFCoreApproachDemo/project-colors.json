@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da303358-88d1-4dd7-9aab-dd0ea75c3d10": {
+      "ProjectGuid": "da303358-88d1-4dd7-9aab-dd0ea75c3d10",
+      "DisplayName": "EFCoreApproachDemo",
+      "ColorIndex": 0
+    },
+    "b9d982e8-8707-4675-a275-c6a1b6b39f21": {
+      "ProjectGuid": "b9d982e8-8707-4675-a275-c6a1b6b39f21",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
