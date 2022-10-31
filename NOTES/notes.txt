@@ -1,0 +1,113 @@
+
+
+Agenda :
+
+- Web application
+- Evolution of web application
+- Design patterns : MVC
+- Asp.net core 6.0 application
+- Create a web application - Hello world
+- Architecture
+- Middleware pipeline
+- Folder structure
+- Controller
+- Action method
+
+
+
+Web application :
+
+- application available across the network
+
+Internet :
+
+- Network of network
+- Exchange the data over network
+
+Web :
+
+- Share the data \ retrive the data from the internet 
+- Web browser to access the web page
+
+How web application is made ?
+
+- Client side scripting :code that runs on the browser 
+eg : html,css,ajax
+- Server side scripting : code runs on the Server
+eg : java,python,c#..
+
+Web server vs web browser :
+
+WB - client side software that helps you to locate some content (text,images,video,audio..)
+
+WS : handles the client request
+
+Browser----> Request ----> Server(process your request)
+ <-----------Response
+
+
+ HTTP : Hyper text transfer protocol
+ HTTPS : Security 
+
+
+ https://www.wikipedia.org/
+
+ Web form :
+
+ - all in one place (Design,code,source)
+ - Difficulty to develop and debug
+ - single change \ refresh - entire page has to reload again 
+
+ MVC : modularise your application
+ - easy to develop and debug 
+
+ Model :data
+ View : UI
+ Controller : interacts with the data and UI
+
+ - Handle the request
+ - Single page application 
+
+
+ CLI :
+
+
+ dotnet new mvc -n "helloapp"
+
+ Architecture :
+
+ HTTPRequest -----> Middleware--->Routing---->Controller----->Action method ---->View(Render)--->Response
+
+
+ Middleware : Software that handles the request and response pipeline.
+
+ Controller :
+
+ - Logic
+ - handle the user actions
+ - Render the view
+ - create the controller only inside the controller Folder
+ - Begin with capital letter
+ - Many action methods
+
+
+ Action methods:
+
+ - Methods inside controller
+ - should perform Logic
+ - All the actions methods MUST BE PUBLIC
+ - [NonAction] - will not be executed 
+ - [ActionName("namehere")]
+ - HTTP VERBS [get,put,post,delete]
+
+URL(without parameters):
+
+https://localhost:7122/user/check
+
+URL (parameters):
+
+https://localhost:7122/user/check?username=jeni&attempt=3
+
+
+
+
