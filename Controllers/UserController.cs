@@ -34,13 +34,28 @@ public class UserController : Controller
         return View ();
     }*/
 
-    public  IActionResult Check(string username,int Attempt=1)
+    public  ViewResult Check(string username,int Attempt=1)
     {
         ViewData["uname"]=username;
         ViewData["Attempts"]=Attempt;
 
      return View();
 
+    }
+
+    public int add()
+    {
+        return 10+20;
+    }
+
+    public EmptyResult display()
+    {
+        return new EmptyResult();
+    }
+
+    public ContentResult disp()
+    {
+        return Content("hello");
     }
 }
 
