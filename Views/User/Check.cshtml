@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Check";
+}
+
+
+
+@for(int i=0;i< (int)ViewData["Attempts"]!;i++)
+{
+  <h1> @ViewData["uname"] has attempted to login @i </h1>
+}
