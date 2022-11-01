@@ -1,0 +1,122 @@
+
+
+Agenda :
+
+- Routing
+- Understanding Models
+- Model Validation 
+- Model Binding
+- Data handling using EF Core
+- Call web api
+
+Routing :
+
+Navigate from one page to another page
+
+- Conventional Routing
+
+app.MapControllerRoute(
+    name: "Movie",
+    pattern: "{controller=Movie}/{action=Index}/{id?}");
+
+
+
+- Attribute Routing
+
+[Route("attributeName")]
+
+Program.cs:
+
+app.UseEndpoints(Endpoint =>
+        {
+            Endpoint.MapControllers();
+        });
+
+Controller :
+
+[Route("Moviehome")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+execution path :
+https://localhost:7229/moviehome
+
+Model :
+
+It deals with data like sqlserver,db,xml,json,text ....
+
+Model Validation :
+
+Validation ---> checking if the data meets the criteria
+
+Data annotations :
+
+1.Required
+2.Range
+3.Display Name
+4.String length
+5.bind
+6.Regular expression
+
+Call WEB API :
+
+- does not have view support
+- web api controller works well in the MVC environment
+- supports content negotiation
+- has an attribute 
+    [ApiController]
+- Execution path [Route("api/[controller]")]
+
+Entity Framework :
+- ORM approach
+
+Types of approaches in EF :
+
+- Code first  (class ---> migrated ---> db(sql,oracle...))
+- Database first (db(sql)----> scaffold ----> application)
+
+Steps:
+
+Step 1: add the nuget packages
+
+PM:
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+CLI :
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet restore
+
+
+Step 2 : Design / Create a class
+Step 3 : goto appsettings.Json and configure the data source 
+
+"ConnectionStrings": {
+    "DeviceConnection": "Data Source=REV-PG02C4Y5;Initial Catalog=Demo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False"
+  },
+
+  Step 4 : Configure the context class
+
+  DBContext :Configure the database connection
+  DBSet : have the database tables
+
+  Step 5 : Configure the services on the middleware 
+
+  Step 6: Use CLI command \ PM console command to migrate the database
+  add-migration 'initialcreate'
+  update-database
+
+
+ CLI Commands:
+    dotnet ef migrations add 'initialcreate'
+    dotnet ef database update
+
+  Step 7 : Configure your controller
+
+  Step 8 : Run the application
