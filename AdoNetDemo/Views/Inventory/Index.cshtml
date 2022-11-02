@@ -1,0 +1,30 @@
+@model IEnumerable<Inventory>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-striped">
+    <thead>Inventory Details</thead>
+    <tbody>
+        @if(Model == null)
+        {
+            <tr><td>No data available</td></tr>
+        }
+        else{
+            @foreach(var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                    <td>@p.Quantity</td>
+                    <td>@p.AddedOn</td>
+                    <td><a asp-action="Update" asp-route-id="@p.Id">Update</a></td>
+                    <td><form asp-action="Delete" method="post" asp-route-id="@p.Id">
+                        <button>Delete</button>
+                    </form>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

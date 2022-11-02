@@ -1,0 +1,41 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Standard HTML Helper</title>
+    </head>
+</html>
+<body>
+ <form width=50px>
+        <h3><center>Registration Form</center></h3>
+
+        @Html.Label("Name","Name")
+        @Html.TextBox("txtname","",new {@class ="form-control",placeholder="Name"})
+
+        @Html.Label("Address","Address")
+        @Html.TextArea("txtaddress","",new {@class ="form-control",rows="5"})
+
+        @Html.Label("Gender","Gender")
+        @Html.RadioButton("Gender","Male",new { id="Male"}) Male
+        @Html.RadioButton("Gender","Female",new { id="Female"}) Female
+
+        <h4>Skills</h4>
+       @Html.ListBox("Skills",new List<SelectListItem>
+            {
+                new SelectListItem {Text="c#",Value="1"},
+                 new SelectListItem {Text="Java",Value="2"},
+                  new SelectListItem {Text="Python",Value="3"},
+                   new SelectListItem {Text="GO",Value="4"},
+                    new SelectListItem {Text="Devops",Value="5"},
+            },new {@class ="form-control"}) 
+  </form>
+</body>
+
+
+    

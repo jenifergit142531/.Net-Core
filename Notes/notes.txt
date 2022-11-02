@@ -1,0 +1,74 @@
+
+
+Agenda :
+
+- HTML Helper class
+- Static files
+- Data handling in .Net core using ADO.net and LINQ
+
+
+HTML helpers :
+
+- Invoke the methods that are represented with HTML in Razor view
+- @ represents HTML Helpers
+
+Types
+1.Standard HTML Helpers
+- @Html.textbox(),label(),textarea(),checkbox,radiobutton....
+
+2.Strongly typed helpers
+3.Templeted HTML helper
+
+
+Static files :
+
+- files in wwwroot folder
+- Files like css,js,images,html...
+
+Root namespace :
+
+- Microsoft.AspNetCore.StaticFiles
+
+Data handling in .Net core using ADO.net and LINQ :
+
+Classes:
+
+SqlConnection :defines the connection string
+SqlCommand : insert,update,delete (ExecuteNonQuery)
+ExecuteReader : read the value from database(select)
+
+
+Step 1:
+
+Create a class in model folder
+public class Inventory
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+        public DateTime AddedOn { get; set; }
+    }
+
+create a table in sql :
+
+CREATE TABLE [dbo].[Inventory]
+(
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Price] MONEY NOT NULL, 
+    [Quantity] INT NOT NULL, 
+    [AddedOn] DATE NOT NULL DEFAULT GETDATE())
+
+
+Step 2 : appsettings.json (configured the data source)
+
+"ConnectionStrings": {
+    "DefaultConnection": "Data Source=REV-PG02C4Y5;Initial Catalog=Demo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False"
+  },
+
+Step 3 : 
+
+ 
+
+- 

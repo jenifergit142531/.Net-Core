@@ -1,0 +1,17 @@
+@model HTMLHelpersDemo.Models.Employees
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<fieldset>
+    <legend>Employee Details</legend>
+    @Html.Display("empdetails")
+</fieldset>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
