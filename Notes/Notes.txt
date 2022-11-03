@@ -1,0 +1,94 @@
+
+
+Agenda :
+
+- Globalization and Localization
+- Custom middleware
+- State Management
+- Razor pages and Razor components
+
+
+Globalization:
+
+- process of designing a web page that support different cultures
+- add support to input ,display,output must be related to the specific geographic Localization
+
+
+Localization : process of adapting to globalized site 
+
+- Give particular culture / locale information while creating the application
+
+Internalization : support globalization / locatization
+
+- Handling globalization and localization using resource files
+
+Assignment : Create a job application form for french culture using resource files 
+
+Step 1 : Configure the middleware (program.cs)
+
+step 2 : Configure the model class
+* add data annotation
+* create resource file for model (Jobapplication.es,resx)
+
+step 3: Configure the controller 
+
+* create resource file for controller (HomeController.es.resx)
+
+step 4: configure the view 
+
+*create a resource file for Index.es.resx
+
+Step 5 : Execute the application 
+
+Custom Middleware :
+
+Include a middleware class in model.cs:
+
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Middleware.Models;
+using System.Threading.Tasks;
+
+namespace Middleware.Models
+{
+    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
+    public class MyCustomMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public MyCustomMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task Invoke(HttpContext httpContext)
+        {
+
+            if (httpContext.Request.Path.ToString() == "/middleware")
+            {
+                await httpContext.Response.WriteAsync("This is from the Middleware class");
+            }
+            else
+            {
+                await _next.Invoke(httpContext);
+            }
+            }
+        }
+    }
+
+    // Extension method used to add the middleware to the HTTP request pipeline.
+    public static class MyCustomMiddlewareExtensions
+    {
+        public static IApplicationBuilder UseMyCustomMiddleware(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<MyCustomMiddleware>();
+        }
+    }
+
+
+    Program.cs:
+
+    
+app.UseMiddleware<MyCustomMiddleware>();
+
+
