@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h3>Employee Details</h3>
+    <p> @ViewBag.Message</p>
+    <p>
+        @{
+                    var e = @ViewBag.EmpKey;
+                 <table>
+                <tr>
+                    <td>Employee Id:</td>
+                </tr>
+                <tr>
+                    <td>@e.Empid</td>
+                </tr>
+                <tr>
+                    <td>Employee Name :</td>
+                </tr>
+                <tr>
+                    <td>@e.EmpName</td>
+                </tr>
+                <tr>
+                    <td>Role:</td>
+                </tr>
+                <tr>
+                    <td>@e.Role</td>
+                </tr>
+            </table>
+ 
+        }
+       </p>
+        
+                  
+      </div>
+

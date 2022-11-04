@@ -1,0 +1,142 @@
+
+
+Agenda :
+
+- State Management
+
+client side :
+
+*cookies
+* querystring
+* hiddle field
+* view data
+* view bag
+* temp data
+
+Server side :
+
+* Session
+
+
+State Management :
+
+- Preserve the state of the web page / application / object / data
+
+Client side sm :happens in the browser / client computer
+Server side sm : stores the data in the server side 
+Cookies : piece of information that is stored in the browser
+- easily tampered \ delete a cookie
+- do not use sensitive info on the cookies 
+
+
+Why ?
+
+Http - Hyper text transfer protocol
+- stateless protocol
+
+State management techniques - Client side :
+
+- cookie
+
+Store data in the browser
+- do not use sensitive info on cookies
+
+
+Query String :
+ 
+ - when you pass data from one page to another page over the URL
+
+ - denoted by the ? Symbol followed by the data
+
+ execution path :
+ https://localhost:7195/query/querytesting?name=mitra
+
+ Hidden field :
+
+ - Hide your data on client
+ - It is available on the page source
+ - Good to use sensitive data
+
+ View Data:
+
+ - maintain the data when sending from controller to view
+ - Dictionary object (key,value pair)
+ - ViewDataDictionary (base class)
+
+ Two checkpoints :
+ 1. Check for null (must be not null)
+ 2. Requires type casting for complex data types 
+
+  <!-- View data implementation
+
+<div>
+    <h3>Employee Details</h3>
+    <p>
+     <   @if(ViewData["Message"]!=null)
+        {
+            <b>@ViewData["Message"].ToString();</b>
+        }
+    </p>
+    <p>
+        @if(ViewData["empkey"]!=null)
+        {
+            var e = (StateManagementDemo.Models.Employee)ViewData["empkey"];
+            <table>
+                <tr>
+                    <td>Employee Id:</td>
+                </tr>
+                <tr>
+                    <td>@e.Empid</td>
+                </tr>
+                <tr>
+                    <td>Employee Name :</td>
+                </tr>
+                <tr>
+                    <td>@e.EmpName</td>
+                </tr>
+                <tr>
+                    <td>Role:</td>
+                </tr>
+                <tr>
+                    <td>@e.Role</td>
+                </tr>
+            </table>
+        }
+    </p>
+</div>
+
+-->
+
+
+
+
+ View Bag:
+ - Wrapper / container to transfer the data from controller to view
+ - No null checking and no type casting
+
+
+ Temp Data:
+
+ Assignment 
+
+ Hint : similar implementation like view data
+
+ Server side state management :
+
+ - Session management
+
+  - Store the data while the user is browsing the application
+  - it is associates with every web page
+  - log out / expires /time out if the session is unused for a period of time
+
+
+  Install Microsoft.AspNetCore.Session
+
+
+
+
+
+
+
+
+
