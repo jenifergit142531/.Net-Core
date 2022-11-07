@@ -1,0 +1,45 @@
+
+
+Agenda :
+
+- View Bag and View Data
+- Deployment
+- Unit tesing
+- Security
+- Razor pages
+
+
+View Bag and view data:
+
+- pass the data from controller to view
+
+View bag : container 
+
+- it will not check for null
+- does not care for type 
+
+
+View data :
+
+- check for null
+- simple data : int,double,string
+- Comlex data : object ()
+
+type casting 
+
+
+Deployment : Azure app service
+
+Unit testing :
+
+- Testing your application to check if meets the expectation.
+
+Outcomes :
+
+pass : actual data = expected output
+fail : actual data doest not equals the expected output
+
+3 steps - AAA
+A - Arrange
+A - Act
+A - Assert 

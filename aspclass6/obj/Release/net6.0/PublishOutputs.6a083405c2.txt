@@ -1,0 +1,7 @@
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\aspclass6.exe
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\aspclass6.dll
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\aspclass6.deps.json
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\aspclass6.runtimeconfig.json
+C:\Users\JeniferY\source\repos\aspclass6\aspclass6\obj\Release\net6.0\PubTmp\Out\aspclass6.pdb
