@@ -1,0 +1,102 @@
+﻿
+
+
+Agenda :
+
+- CRUD in API
+- Dependency injection
+
+
+CRUD in API :
+
+Step 1 : Add packages 
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+Step 2: Create a model class
+public class Player
+    {
+        [Key]
+        public int Pid { get; set; }
+        public string PlayerName { get; set; }
+        public int MaxScore{ get; set; }
+        public int Rating { get; set; }
+
+    }
+
+ 
+ Step 3: configure the data source 
+
+ "ConnectionStrings": {
+    "GameCpnnection": "Data Source=REV-PG02C4Y5;Initial Catalog=Demo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False"
+  },
+
+  Step 4: Configure the context class
+
+   public class GameContext:DbContext
+    { 
+       public GameContext(DbContextOptions options):base (options)
+        {
+
+        }
+        public DbSet<Player> Players { get; set; }
+    }
+
+
+    Step 5 : Configure the middleware
+
+    builder.Services.AddDbContext<GameContext>(
+    options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("GameConnection")));
+
+        - Build the solution
+
+     Step 6 : PM commands
+
+     add-migration "initial"
+     update-database
+
+     Step 7 : Add the api controller with actions
+
+     Step 8 : BUild and run
+
+     GET : https://localhost:44362/api/players
+     PUT :https://localhost:44362/api/players/1
+     POST :https://localhost:44362/api/players
+     DELETE :https://localhost:44362/api/players/1
+
+
+  Dependency Injection :
+
+  - Software design pattern that ensures loosely coupled code.
+  - implementing DI is a code best practice
+
+  controller
+  class 
+
+  ob1 ->player(get,updateplayerdetails)
+  ob2 ->betterplayer(scorecard())
+  .....obn -> class
+
+
+  controller --->http request---->DI(Interface)---->classes
+
+  ob1 => interface
+
+
+  Without DI :
+
+  - you need to create n number of objects to invoke the methods
+
+  Problem :
+
+  - as your code grows,it will be difficult to manage the code 
+
+  With DI:
+
+  - create interface that communicates with your class and conrtoller
+
+  - DI through interface
