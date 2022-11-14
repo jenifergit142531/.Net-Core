@@ -1,0 +1,121 @@
+
+
+Agenda :
+
+- Dependency Injection
+- Content Negotiation / formatters
+- Routing
+- Security
+- OData 
+
+Dependency Inversion :
+- Inversion of control principle
+
+SOLID Principles :(Best practise - design pattern)
+
+- Single responsibility(one responsibility)
+- Open close principle(open to extension and closed to modification)
+- Liskov's substitution principle(subclass for the base class)
+- Interface segregation principle(Interface are seperated based on responsibility)
+- Dependency inversion - Loosely coupled code 
+
+class1 obj = new class1()
+obj.method1()   //tightly couple code
+
+
+Interface injection (technique used to achieve dependency inversion)
+
+interface1 _intf1;
+intf1.method1();
+intf1.method2()......
+
+
+Service Registration Lifetimes :
+
+1.AddSingleton() - Instance is created only once
+2.AddTransient() - New instance is created for every request
+3.AddScoped() - instance created once and reused within the same scope
+
+
+Routing :
+
+Map your HTTP request to the controller action method ---> to get a response
+
+Content formatters:
+
+1.Resource
+2.URL
+3.Representation
+
+choosing the best representation of data for your requirement from the available optiona.
+
+Data formats:
+
+- XML
+- JSON
+- TEXT
+- HTML
+
+
+//xml formatter
+builder.Services.AddControllers().AddXmlSerializerFormatters();
+
+//Json formatter
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+
+//Accepting to all browers
+
+builder.Services.AddControllers(options =>
+{
+    options.RespectBrowserAcceptHeader = true;
+
+});
+*/
+
+//Remove the formatter
+
+builder.Services.AddControllers(options =>
+{
+    options.OutputFormatters.RemoveType<StringOutputFormatter>();
+    options.OutputFormatters.RemoveType<HttpNoContentOutputFormatter>();
+    options.OutputFormatters.RemoveType<XmlSerializerOutputFormatter>();
+    options.OutputFormatters.RemoveType<TextOutputFormatter>();
+    options.OutputFormatters.RemoveType<SystemTextJsonOutputFormatter>();
+})
+
+Notes:
+Figure out base class to retrieve the built in data formats 
+
+Security :
+
+- Authentication(validation - key constraint)
+- Authorization (Authorize[])
+
+Authentication : Key based 
+
+OData - Open Data Protocol
+
+- Querying data in your web api
+
+- filter,sort,top,select,....
+
+Query options :
+
+1.$orderby  - sort in ascending or descending
+2.$select  - set of columns
+3.$skip - skip the no of records 
+4.$top - fetch the record 
+5.$expand - expand  the related entities 
+6.$filer - check for conditions(filter hours gt 10)
+7.$inlinecount - pagination
+
+Package :
+Microsoft.AspNetCore.OData
+Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+
+
+
