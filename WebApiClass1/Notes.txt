@@ -1,0 +1,78 @@
+
+
+Agenda :
+
+- Introduction to web api
+- Methods in API
+- Install Postman
+- Create a simple web api
+- Content formatter
+- Routing
+
+Introduction :
+
+- API : Application programming interface
+
+Intermediate software that handles the request and responce from various clients(mobile,desktop,laptop)
+
+Why ?
+
+- Portable
+- Content negotiation(supports data formats like text,json,xml)
+- Easy to implement
+- No view support
+
+Implementation :
+
+- SOAP - simple object access protocol
+
+* understand only xml data
+* returns only xml data
+* write code in tags
+<soapenvelop>
+<soapheader>khgdfik</soapheader>
+<soapbody>ibdunfimel,f;l.reflihelkfem;lekmlfem,l,</soapbody>
+<soapfault>kbhdfcliwnf;wkf<soapfault>
+<soapenvelop>
+
+* diffult to write or understand the code
+
+- REST API - Representational state transfer architeture
+
+* Http request & http response
+* easy to implement
+* supports different HTTP VERBS 
+
+=>POST   = Create
+=>GET  = Read
+=>PUT  = Update
+=>DELETE   = Delete
+
+* Deploy as self hosting,IIS SERVER,Cloud\
+
+Protocol : HTTP / HTTPS
+
+Testing : Postman/Fiddler
+
+
+Get (param) execution path :
+
+https://localhost:44316/api/language/test?id=1
+
+Data binding :
+
+- Simple DB : Get and delete
+- Complex data binding: Post and put
+
+HTTP Status code :
+
+- Response body of the web api
+
+100 - Informationa
+200 -success
+300 - redirection
+400 - client error
+500 - server error
+
+
+
