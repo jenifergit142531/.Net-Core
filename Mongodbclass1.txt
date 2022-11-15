@@ -1,0 +1,395 @@
+MongoDB 
+
+Agenda :
+- Introduction
+- Advantages
+- Applications
+- MongoDB Vs relational DB
+- Installation and environment
+- Database,Collection,Document
+- Create Database / drop Database
+- Create Collection / Drop collection
+- View Database / Collection
+- Basic queries
+*Insert
+*Find
+*Update
+*Delete 
+- Aggregate functions
+
+
+MONGO - Database
+
+- Open source
+- Cross platform
+- distributed document based database
+- Ease to use 
+- Eay to debug
+- Easy to scale
+- NOSQL database
+- Huge volume of data(big data appln)
+- Fast and efficient for data retrieval
+-  object_id : this will ensure data integrity,auto generated for every document
+- No concept called normalization here
+- Mongo db does not fixed structure
+- data storage in Mongo db : JSON{ "key":value"} format
+
+	MongoDB             -   		RDBMS
+-	Database			Database
+-	Collection			Tables
+-	Document		Row(Record)
+-	Field			Column
+
+
+Database :
+
+- Physical container for collections.
+- MongoDB can have multiple db
+
+Collection :
+- group of documents
+- Do not enforce a schema
+- Documents within a collection can have different field
+
+Document :
+- Key value pair
+- Have dynamic schema 
+
+
+Advantages :
+
+- Schema less
+- Structure is clear
+{doc1 {empid:566,empname:jhk}doc2{kfk}
+- No complex joins
+- Dynamic queries 
+- Easy to scale
+
+Why ??
+- Document oriented storage - JSON format
+- Index on any attribute
+- query support
+- Faster in processing
+- Professional support by mongodb
+
+Where ? - Applications
+*Big data
+*Mobile and social applications
+*Content management and delivery
+* Data hub
+* User data management 
+
+Installation & configurations :
+
+MongoDB Server - MongoDB Shell - command line tool
+MongoDB Compass - GUI tool
+
+Commands :
+
+show dbs : list the database on your system
+db : current working database
+help : to list the commands
+
+Create database :
+
+use database_name
+
+
+drop database :
+
+db.dropDatabase()
+
+
+Objectid : 24 charater hexadecimal string value 
+
+
+Create collection :
+
+db.createCollection("TicketDetails")
+
+
+show collection :
+show collections
+
+drop collection :
+
+db.TicketDetails.drop()
+
+Sample snippet :
+use Movie
+'switched to db Movie'
+db.createCollection("MovieInfo")
+{ ok: 1 }
+db.createCollection("TicketInfo")
+{ ok: 1 }
+db.createCollection("ReviewInfo")
+{ ok: 1 }
+
+Insert Document :
+
+1.insertOne() - insert a single document in the collection
+2.insert() - insert one / more documents in the collection
+3.insertMany() - insert a multiple document in the collection
+
+db.collectionname.insertOne(document,[writeconcern])
+
+db.MovieInfo.insertOne({"mid":"100","mname":"avatar","seats":"5","location":"pune"})
+
+Autogenerating id:
+db.MovieInfo.insertOne({"mid":"100","mname":"avatar","seats":"5","location":"pune"})
+{ acknowledged: true,
+  insertedId: ObjectId("63732257153ea5da30a401e7") }
+db.MovieInfo.insertOne({"mid":"100","mname":"avatar","seats":"5","location":"pune"})
+{ acknowledged: true,
+  insertedId: ObjectId("6373226f153ea5da30a401e8") }
+
+Manually inserting _id :
+db.TicketInfo.insertOne({"_id":"001","mname":"avatar","price":"250"})
+{ acknowledged: true, insertedId: '001' }
+db.TicketInfo.insertOne({"_id":"001","mname":"avatar","price":"250"})
+//throw an error indicating duplicate key since we are overriding the _id key column 
+
+insertMany ([{},{},{}.....{}])
+
+db.ReviewInfo.insertMany([{"_id":"003","mname":"F&F","rating":"5","feedback":"Excellent"},{"_id":"004","mname":"Gonegirl","rating":"3","feedback":"Average"}])
+
+
+Find() 
+
+- retrieve document from the collection
+
+1.find() - retrieve all the records that match the criteria
+2.findOne() - Retrieve the first occurence of the record that matches the criteria 
+
+
+db.ReviewInfo.find().pretty()
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'good' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Excellent' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+db.ReviewInfo.findOne({"feedback":"good"})
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+db.ReviewInfo.find({"feedback":"good"})
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'good' }
+
+sorting :
+
+Ascending :
+db.ReviewInfo.find().sort({"rating":"1"})
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'good' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Excellent' }
+
+Descending:
+db.ReviewInfo.find().sort({"rating":"-1"})
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'good' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Excellent' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+
+MongoDB Cursor : Iterate through the documents
+
+var cursor=db.ReviewInfo.find()
+cursor.next()
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+cursor.next()
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'good' }
+cursor.next()
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Excellent' }
+cursor.next()
+{ _id: '004', mname: 'Gonegirl', rating: '3', feedback: 'Average' }
+
+
+
+Update : modifying the existing document
+
+1.updateOne() - modifies single document in the collection
+2.updateMany()  - modifies multiple documents in the collections
+
+db.collection.updateOne(filter,document,options)
+
+filter : selection criteria
+document : document that contains modification to apply
+options:upsert,writeconcern, etc
+
+updateOne():
+
+db.ReviewInfo.updateOne({"_id":"002"},{$set:{"feedback":"average"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+db.ReviewInfo.find()
+{ _id: '001', mname: 'avatar', rating: '5', feedback: 'good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'average' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Excellent' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+
+updateMany() :
+
+db.ReviewInfo.updateMany({"rating":"5"},{$set:{"feedback":"Very good"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0 }
+db.ReviewInfo.find()
+{ _id: '001',
+  mname: 'avatar',
+  rating: '5',
+  feedback: 'Very good' }
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'Very good' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Very good' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+
+
+Delete : Removing the document from the collection
+
+1.DeleteOne() - Delete the first matching document in the collection
+2.DeleteMany() - delete all the matching document in the collection
+
+
+db.collection.deleteOne(filter,option)
+
+filter : selection criteria
+
+deleteOne():
+
+db.ReviewInfo.deleteOne({"rating":"5"})
+{ acknowledged: true, deletedCount: 1 }
+db.ReviewInfo.find()
+{ _id: '002', mname: 'tenet', rating: '5', feedback: 'Very good' }
+{ _id: '003', mname: 'F&F', rating: '5', feedback: 'Very good' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+
+deleteMany():
+
+db.ReviewInfo.deleteMany({"rating":"5"})
+{ acknowledged: true, deletedCount: 2 }
+db.ReviewInfo.find()
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+
+
+db.TicketInfo.deleteMany({"price":{$lt:"300"}})
+{ acknowledged: true, deletedCount: 2 }
+db.TicketInfo.find()
+{ _id: '002', mname: 'tenet', price: '500' }
+{ _id: '003', mname: 'gonegirl', price: '300' }
+
+
+Deleteall:
+
+db.TicketInfo.deleteMany({})
+
+
+Aggregate functions:
+
+- process of selecting data from a collection in mongoDB.
+- multiple document,do some computation, and return the single result
+
+
+1.Single purpose aggregation method
+count()
+distinct()
+
+2.Aggregation pipeline : contain multiple stages(o/p of one stage is the 1/p of the next stage)
+
+db.collection.aggregate([{stage1},{stage2},...])
+
+
+db.ReviewInfo.insertMany([{"_id":"001","mname":"PS1","rating":"4","feedback":"Good"},{"_id":"002","mname":"Robot","rating":"3","feedback":"average"},{"_id":"003","mname":"Horror","rating":"2","feedback":"bad"}])
+{ acknowledged: true,
+  insertedIds: { '0': '001', '1': '002', '2': '003' } }
+db.ReviewInfo.find()
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'Average' }
+{ _id: '001', mname: 'PS1', rating: '4', feedback: 'Good' }
+{ _id: '002', mname: 'Robot', rating: '3', feedback: 'average' }
+{ _id: '003', mname: 'Horror', rating: '2', feedback: 'bad' }
+
+
+match():
+
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}}])
+{ _id: '002', mname: 'Robot', rating: '3', feedback: 'average' }
+
+db.ReviewInfo.updateOne({"_id":"004"},{$set:{"feedback":"average"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0 }
+
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}}])
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'average' }
+{ _id: '002', mname: 'Robot', rating: '3', feedback: 'average' }
+
+
+group()
+
+db.ReviewInfo.aggregate([{$group:{"_id":"$rating"}}])
+{ _id: '2' }
+{ _id: '3' }
+{ _id: '4' }
+db.ReviewInfo.aggregate([{$group:{"_id":"$rating",totalMovie:{$sum:1}}}])
+{ _id: '3', totalMovie: 2 }
+{ _id: '4', totalMovie: 1 }
+{ _id: '2', totalMovie: 1 }
+
+
+match(),group() :
+
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}},{$group:{"_id":"$rating",totalMovie:{$sum:1}}}])
+{ _id: '3', totalMovie: 2 }
+
+
+match(),group(),sort() :
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}},{$group:{"_id":"$rating",totalMovie:{$sum:1}}},{$sort:{mname:1}}])
+{ _id: '3', totalMovie: 2 }
+
+
+match(),sort():
+
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}},{$sort:{mname:1}}])
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'average' }
+{ _id: '002', mname: 'Robot', rating: '3', feedback: 'average' }
+db.ReviewInfo.aggregate([{$match:{"feedback":"average"}},{$sort:{mname:-1}}])
+{ _id: '002', mname: 'Robot', rating: '3', feedback: 'average' }
+{ _id: '004',
+  mname: 'Gonegirl',
+  rating: '3',
+  feedback: 'average' }
+
+
