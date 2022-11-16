@@ -1,0 +1,162 @@
+
+
+Agenda :
+
+- Introduction
+- Architecture
+- Installation and Environment setup
+- Create first angular application
+- Folder structure
+- Angular Components
+- Data Binding
+
+
+
+Introduction :
+
+- Front end framework 
+- Advantage : Building a single page application (SPA) using HTML & Typescript
+
+Features :
+
+- Two way data Binding
+- Routing support
+- Expressive HTML
+- Modular by design
+- Built in back end support
+
+
+Architecture :
+
+- Application is made up of Components
+- Top level component : Root component
+- We can add several child Components to the application 
+
+Installation :
+
+- Install Nodejs - https://nodejs.org/en/download/
+- Node package manager : npm install -g npm
+- Install Angular CLI : npm install -g @angular/cli@latest
+
+node -v (check the node version)
+npm -v (to check the version)
+ng --help (list the angular cli commands)
+ng version ( to check the angular version)
+
+
+Creating first angular application :
+
+ng new welcomeapp
+
+routing ?? Y
+Choose stylesheet ?? CSS
+
+Run the Angular application :
+
+npm start - build the application
+ng serve -o - run the application and -o opens it automatically on the browser
+
+ctrl + c - Stop the build process
+
+Understanding the folder structure :
+
+Webpack : Bundler (packages js,css,html)
+launch.json : contains the execution path
+node_module : contains dependency / packages that is installed with your application
+src : source folder (contains angular application)
+* lot of sub folders
+* put together all the piece of application in  one place 
+(component,services,class,modules,html....)
+
+app folder: 
+
+- component
+- services
+- modules
+- routing modules
+- test file 
+
+FYI:
+Component syntax :
+cn.component.file
+
+asset folder :
+
+- hold the static files like images,logo,icons
+
+Environment :
+environment.ts => production environment
+environment.prod.ts => production environment
+
+
+favicon.ico :
+icon file that displays on the browser
+index.html : starting point of your application
+* loading page in the browser
+main.ts : compare main() in other application
+entry point of application
+polyfills.ts = > browers specific configuration
+stlyes.css - global css file
+test.ts - global test file
+browserlist : list supported brower info
+.editorconfig : set up the team environment for best code practices
+.gitignore - files to be ignored in the git repo
+angular.json - contains configuration of your angular project
+karma.config - testing tool
+package-lock.son : auto generated during npm install
+package.json : info on project,dependencies etc
+readme : contains basic commands for angular execution
+tsconfig.json: configuration info about ts code
+tsconfig.spec.json : testing purpose
+
+
+
+
+Important folder :
+
+index.html
+main.ts
+src
+* app
+* asset
+* package.json
+
+Databinding :
+
+One way data binding :
+
+Event binding: binding from view to source data eg :hello()
+string interpolation : {{...}}binds data from source to view
+PropertyBinding : source to view []
+Attribute binding : attr.colspan={{value}}
+style binding :[style.Color]="Color"
+class binding : <button (click)="hello()" class="fontClass" >click me</button>
+
+
+Two way data binding :
+
+source ----> view
+view ------> source 
+
+
+implementation:
+
+1.Input event 
+
+<input [value]='name' (input)='name=$event.target.value'>
+
+
+2.ngModel
+
+include namespace :
+
+import { FormsModule} from '@angular/forms';
+
+imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+
+
+  input [(ngModel)]="name">
