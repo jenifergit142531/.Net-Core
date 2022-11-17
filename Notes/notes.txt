@@ -1,0 +1,77 @@
+
+
+Agenda : 
+
+- Module
+- Angular directives
+- Pipes
+- Routing
+
+
+Module :
+
+- Container 
+- several Components ,services,directives,Pipes
+- import / export modules
+
+Parts
+1.Angular core library
+2.@NgModule decorator
+3. Module Name
+
+CLI Commands :
+
+ng g module Employee
+ng g c employee/empdetails
+
+Directives :
+
+- Change the behaviour / appearance /layout of the DOM (HTML elements)
+
+1. Structural
+-NgFor(*ngFor)
+
+local variables =>
+1.Index
+2.First
+3.Last
+4.Even
+5.Odd
+
+-NgIf(*ngIf)
+-NgSwitch(*ngSwitch)
+
+2.Attribute
+- NgStyle
+- NgClass
+
+3.Component 
+@Component
+
+
+Pipes :
+
+- Transform your raw data into specific format 
+
+built in pipes :
+1.Lowercase
+2.Uppercase
+3.Titlecase
+4.Currency
+5.date
+
+| - indicates pipes
+
+
+Routing :
+
+- Navigate between pages
+
+Redirecting routes :
+
+path : ''  ->default page
+
+Wildcard routes : 
+
+path : '**' --> customerror page
+
