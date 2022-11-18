@@ -1,0 +1,21 @@
+<div class="container my-5">
+    <h1> Booking Details </h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Booking Id</th>
+                <th>Booking Name</th>
+                <th>Movie Name</th>
+                <th>Ticket Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let b of bookings">
+                <td>{{b.bid}}</td>
+                <td>{{b.bname}}</td>
+                <td>{{b.mname}}</td>
+                <td>{{b.ticketprice}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
