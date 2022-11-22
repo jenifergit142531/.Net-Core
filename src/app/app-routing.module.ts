@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddBookingComponent } from './add-booking/add-booking.component';
+import { EditBookingComponent } from './edit-booking/edit-booking.component';
 import { HomeComponent } from './home/home.component';
 import { ViewBookingComponent } from './view-booking/view-booking.component';
 
@@ -9,7 +10,8 @@ const routes: Routes = [
 {path:'',component:HomeComponent},
 {path:'home',component:HomeComponent},
 {path:'addbooking',component:AddBookingComponent},
-{path:'viewbooking',component:ViewBookingComponent}
+{path:'viewbooking',component:ViewBookingComponent},
+{path:'bookings/edit/:bid',component:EditBookingComponent}
 
 
 

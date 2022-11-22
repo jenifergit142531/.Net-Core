@@ -1,0 +1,38 @@
+
+<div class="container my-5">
+    <h1>Edit booking page </h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateBooking()">
+                <div class="mb-3">
+                    <label for="bid" class="form-label">Booking Id</label>
+                    <input type="text" class="form-control" id="bid" readonly name="bid" [(ngModel)]="bookingDetails.bid">
+                    
+                  </div>
+                <div class="mb-3">
+                  <label for="bname" class="form-label">Booking Name</label>
+                  <input type="text" class="form-control" id="bname" name="bname" [(ngModel)]="bookingDetails.bname">
+                  
+                </div>
+                <div class="mb-3">
+                    <label for="mname" class="form-label">Movie Name</label>
+                    <input type="text" class="form-control" id="mname" name="mname" [(ngModel)]="bookingDetails.mname">
+                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="ticketprice" class="form-label">Ticket Price</label>
+                    <input type="number" class="form-control" id="ticketprice" name="ticketprice" [(ngModel)]="bookingDetails.ticketprice">
+                    
+                  </div>
+             
+                <button type="submit" class="btn btn-primary">Edit Booking</button>
+        
+                
+                <button type="button" class="btn btn-danger" (click)="deleteBooking(bookingDetails.bid)" >Delete</button>
+              </form>
+    
+    
+        </div>
+    </div>
+    
+    </div>

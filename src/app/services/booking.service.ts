@@ -25,4 +25,18 @@ export class BookingService {
     addBookingRequest.bid='00000000-0000-0000-0000-000000000000';
     return this.http.post<Booking[]>(this.baseApiUrl+'/api/Bookings',addBookingRequest);
   }
+  
+  getBookingId(bid:string):Observable<Booking>
+  {
+    return this.http.get<Booking>(this.baseApiUrl+'/api/bookings/'+bid);
+  }
+
+  updateBooking(bid:string,updateBookingRequest:Booking):Observable<Booking[]>
+  {
+     return this.http.put<Booking[]>(this.baseApiUrl+'/api/Bookings/'+bid,updateBookingRequest);
+  }
+  deleteBooking(bid:string):Observable<Booking>
+  {
+    return this.http.delete<Booking>(this.baseApiUrl+'/api/Bookings/'+bid);
+  }
 }

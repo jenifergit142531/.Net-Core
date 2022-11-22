@@ -8,6 +8,7 @@ import { ViewBookingComponent } from './view-booking/view-booking.component';
 import { AddBookingComponent } from './add-booking/add-booking.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EditBookingComponent } from './edit-booking/edit-booking.component';
 
 
 
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     ViewBookingComponent,
-    AddBookingComponent
+    AddBookingComponent,
+    EditBookingComponent
   ],
   imports: [
     BrowserModule,

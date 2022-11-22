@@ -7,6 +7,7 @@
                 <th>Booking Name</th>
                 <th>Movie Name</th>
                 <th>Ticket Price</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,9 @@
                 <td>{{b.bname}}</td>
                 <td>{{b.mname}}</td>
                 <td>{{b.ticketprice}}</td>
+                <td>
+                    <a [routerLink]="['/bookings','edit',b.bid]">View</a>
+                </td>
             </tr>
         </tbody>
     </table>
