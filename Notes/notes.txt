@@ -1,0 +1,60 @@
+
+
+Agenda :
+
+- Services / DI
+- Angular forms
+- HTTP Cient
+- Observable / Promises
+- Testing Angular 
+ *Jasmine & karma
+
+ * Demonstrate using project 
+
+ HTTP Client :
+
+ - Http request
+ -  Http response
+
+- Include the libraries in angular to support this feature 
+- tsconfig.json
+"typeRoots": [
+      "node_modules/@types",
+      "node_modules/@angular",
+      "node_modules/@angular/common/http"
+    ]
+
+
+environment path :
+
+export const environment = {
+  production: false,
+  baseApiUrl:'https://localhost:7055'
+};
+
+app.module :
+
+import { HttpClientModule } from '@angular/common/http';
+
+HttpClientModule
+
+Service :
+
+- piece of code that perform some logic
+- function / value/ both
+- reused across the component 
+
+ ng g s services/booking
+
+ observable 
+
+ - emits multiple values at a time
+ - lazy
+ - subscribe() - make a call explicitly 
+
+
+
+ Promise:
+
+ - emit single value at a time
+ - not lazy
