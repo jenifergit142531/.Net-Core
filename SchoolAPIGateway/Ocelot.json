@@ -1,0 +1,50 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/apigateway/AdmissionService",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/StudentAdmission",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7089
+
+        }
+      ]
+
+
+    },
+    {
+      "UpstreamPathTemplate": "/apigateway/AttendanceService",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/StudentAttendance",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7201
+
+        }
+      ]
+
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7240"
+  }
+
+}
+
+/*1.DownstreamPathTemplate :actual endpoint of the MS
+2.UpstreamPathTemplate : Path thst is directed by the Ocelot API getway
+3.DownstreamScheme : HTTPS
+4."DownstreamHostAndPorts": Defines the host details and the port number 
+
+  * get the details from launchsettings.json under properties
+
+5.UpstreamHttpMethod : Http methods supported on the gateway
+
+
+*/

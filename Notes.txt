@@ -1,0 +1,61 @@
+
+
+
+
+Agenda :
+
+- Microservices
+- Need of Microservice
+- Advantages
+- Monolithic vs microservices architecture
+- Api gateway
+- Ocelot gateway
+- Create microservice through API gateway
+
+
+Microservices:
+
+- Architectural pattern to build applications(small ----> larger application)
+- application is broken smaller unit of work and individual DevOps team
+- All the modules are created at once in parallel(quicker development,easy unit testing)
+- finally they are integrated to check if they work together well
+
+
+DevOps :  Cross functional team
+
+3 -5 developers
+1 scrum master
+2 tester
+
+
+Need ???
+
+- Modularity
+- Portable ( Docker containers - they will hold data + packages + dependency + s/w req in one unit)
+- light weight
+- Designing & optimizing app towards cloud model
+- High scability
+-  Independency
+- Easy to deploy  
+
+monolithic architecture  vs microservices 
+
+- Single db						 multiple db \ dedicated db for every module
+- dependent						 Independent
+- BL : Single prog lang			 multiple prg lang
+- tightly coupled			     loosely coupled
+-deployment in single server     deployed in cloud
+
+API Gateway :
+
+- Http request from client will not be any specific microservices
+- rather it is handled by the API gateway
+- response is rendered through gateway
+- Seperation of concern(client not exposed to the microservices)
+- ensures data security  and easy accessbilty
+
+
+
+
+
+
