@@ -1,0 +1,11 @@
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\HRM.API.exe
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\HRM.API.dll
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\HRM.API.deps.json
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\HRM.API.runtimeconfig.json
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\HRM.API.pdb
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\demo\HRM\HRM.API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
