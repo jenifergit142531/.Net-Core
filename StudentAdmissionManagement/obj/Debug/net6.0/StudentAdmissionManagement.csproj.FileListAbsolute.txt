@@ -4,7 +4,6 @@ C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\D
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\StudentAdmissionManagement.deps.json
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\StudentAdmissionManagement.runtimeconfig.json
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\StudentAdmissionManagement.dll
-C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\ref\StudentAdmissionManagement.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\StudentAdmissionManagement.pdb
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -24,3 +23,10 @@ C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\D
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\ref\StudentAdmissionManagement.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\StudentAdmissionManagement.pdb
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\StudentAdmissionManagement.genruntimeconfig.cache
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\StudentAdmissionManagement.csproj.AssemblyReference.cache
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\staticwebassets\msbuild.StudentAdmissionManagement.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\staticwebassets\msbuild.build.StudentAdmissionManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.StudentAdmissionManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.StudentAdmissionManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAdmissionManagement\obj\Debug\net6.0\refint\StudentAdmissionManagement.dll

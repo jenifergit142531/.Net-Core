@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0a659364-46d4-4768-b597-cfafb1194a51": {
+      "ProjectGuid": "0a659364-46d4-4768-b597-cfafb1194a51",
+      "DisplayName": "SchoolAPIGateway",
+      "ColorIndex": 0
+    },
+    "c7d8c49d-befb-4312-a78f-0b25f7fde8d3": {
+      "ProjectGuid": "c7d8c49d-befb-4312-a78f-0b25f7fde8d3",
+      "DisplayName": "StudentAdmissionManagement",
+      "ColorIndex": 1
+    },
+    "effc0583-78d9-40aa-a078-dc815da64279": {
+      "ProjectGuid": "effc0583-78d9-40aa-a078-dc815da64279",
+      "DisplayName": "StudentAttendanceManagement",
+      "ColorIndex": 2
+    },
+    "dc7c9365-4e2b-4155-b194-11ccb58f5169": {
+      "ProjectGuid": "dc7c9365-4e2b-4155-b194-11ccb58f5169",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -4,7 +4,6 @@ C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\StudentAttendanceManagement.deps.json
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\StudentAttendanceManagement.runtimeconfig.json
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\StudentAttendanceManagement.dll
-C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\ref\StudentAttendanceManagement.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\StudentAttendanceManagement.pdb
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -25,3 +24,9 @@ C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\ref\StudentAttendanceManagement.dll
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\StudentAttendanceManagement.pdb
 C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\StudentAttendanceManagement.genruntimeconfig.cache
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\staticwebassets\msbuild.StudentAttendanceManagement.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\staticwebassets\msbuild.build.StudentAttendanceManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.StudentAttendanceManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.StudentAttendanceManagement.props
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\JeniferY\source\repos\SchoolAPIGateway\StudentAttendanceManagement\obj\Debug\net6.0\refint\StudentAttendanceManagement.dll
